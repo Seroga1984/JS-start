@@ -232,20 +232,217 @@
 //   let price;
   
 
-//  switch (type) { 
-//     case "starter": 
-//       price = 0; 
+//  switch (type) {
+//     case "starter":
+//       price = 0;
 //       break;
 
-//     case "professional": 
-//       price = 20; 
+//     case "professional":
+//       price = 20;
 //       break;
 
-//     case "organization": 
-//       price = 50; 
+//     case "organization":
+//       price = 50;
 //       break;
 //   }
 
   
 //   return price;
 // }
+
+
+
+// task 28
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+  // Change code below this line
+
+  // if (password === null) {
+  //   message = "Canceled by user!";
+  // } else if (password === ADMIN_PASSWORD) {
+  //   message = "Welcome!";
+  // } else {
+  //   message = "Access denied, wrong password!";
+  // }
+
+
+//   switch (password) {
+//     case 'jqueryismyjam':
+//     message = "Welcome!";
+//     break;
+
+//     case null:
+//     message = "Canceled by user!";
+//     break;
+
+
+//     default:
+//     message = "Access denied, wrong password!"
+
+//   }
+
+  // Change code above this line
+//   return message;
+// }
+
+
+// task 29
+// function getShippingCost(country) {
+//   let message;
+  
+//   switch (country) {
+
+//     case 'China':
+//     message = 'Shipping to China will cost 100 credits';
+//     break;
+
+//     case 'Chile':
+//     message = 'Shipping to Chile will cost 250 credits';
+//     break;
+
+//     case 'Australia':
+//     message = 'Shipping to Australia will cost 170 credits';
+//     break;
+
+//     case 'Jamaica':
+//     message = 'Shipping to Jamaica will cost 120 credits';
+//     break;
+
+//     default:
+//     message = "Sorry, there is no delivery to your country";
+//   }
+
+  
+//   return message;
+// }
+
+// getShippingCost("Australia");
+// getShippingCost("Germany");
+// getShippingCost("China");
+// getShippingCost("Chile");
+// getShippingCost("Jamaica");
+// getShippingCost("Sweden");
+
+// task 30
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`;
+
+//   return message;
+// }
+
+// getNameLength("Poly");
+// getNameLength("Harambe");
+// getNameLength("Billy");
+// getNameLength("Joe");
+
+// task 31
+// const courseTopic = "JavaScript essentials";
+// Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopicLength - 1];
+// Change code above this line
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+
+
+
+// task 32
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(string, length);; // Change this line
+
+//   return substring;
+// }
+
+// getSubstring("Hello world", 3);
+// getSubstring("Hello world", 6);
+// getSubstring("Hello world", 8);
+// getSubstring("Hello world", 11);
+// getSubstring("Hello world", 0);
+
+
+
+// task 33
+// function formatMessage(message, maxLength) {
+//   let result;
+  // Change code below this line
+// if (message.length <= maxLength) {
+//   result = `${message}`;
+//   }
+
+
+
+// else
+// {
+//   result = message.slice(0, maxLength) + "...";
+// }
+
+// console.log(result);
+
+  /// Change code above this line
+//   return result;
+// }
+
+// formatMessage("Curabitur ligula sapien", 16);
+// formatMessage("Curabitur ligula sapien", 23);
+// formatMessage("Vestibulum facilisis purus nec", 20);
+// formatMessage("Vestibulum facilisis purus nec", 30);
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 15);
+// formatMessage("Nunc sed turpis a felis in nunc fringilla", 41);
+
+
+
+// task 34
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+// console.log(normalizedInput)
+//   return normalizedInput;
+  
+// }
+
+
+// normalizeInput("Hello world");
+// normalizeInput("This ISN'T SpaM");
+// normalizeInput("Big SALE");
+
+
+
+// task 35
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name);
+//   return result;
+// }
+
+
+// task 36
+// function checkForSpam(message) {
+//   let result;
+//   const messageTol = message.toLowerCase()
+  
+// if (result = messageTol.includes("spam")) {
+//   result = true;
+// }
+
+// else if (result = messageTol.includes("sale")){
+//   result = true;
+// }
+// else {
+//   result = false;
+//   }
+  
+//   return result;
+// }
+
+// checkForSpam("Latest technology news");
+// checkForSpam("JavaScript weekly newsletter");
+// checkForSpam("Get best sale offers now!");
+// checkForSpam("Amazing SalE, only tonight!");
+// checkForSpam("Trust me, this is not a spam message");
+// checkForSpam("Get rid of sPaM emails. Our book in on sale!");
+// checkForSpam("[SPAM] How to earn fast money?");
+
