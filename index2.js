@@ -147,20 +147,20 @@
 
 
 
-function calculateEngravingPrice(message, pricePerWord) {
+// task 11
+// function calculateEngravingPrice(message, pricePerWord) {
    
-   const message = [message];
-   const totalWord = message.length;
-   return totalWord * pricePerWord;
+//    const wordMessage = message.split(" ");
+//    const totalWord = wordMessage.length;
+//    return totalWord * pricePerWord;
 
 
 
 
-   
-}
+  
+// }
 
-calculateEngravingPrice("JavaScript is in my blood", 10);
-console.log(calculateEngravingPrice("JavaScript is in my blood", 10))
-calculateEngravingPrice("JavaScript is in my blood", 20);
-calculateEngravingPrice("Web-development is creative work", 40);
-calculateEngravingPrice("Web-development is creative work", 20);
+// calculateEngravingPrice("JavaScript is in my blood", 10);
+// calculateEngravingPrice("JavaScript is in my blood", 20);
+// calculateEngravingPrice("Web-development is creative work", 40);
+// calculateEngravingPrice("Web-development is creative work", 20);
