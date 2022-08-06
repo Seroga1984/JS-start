@@ -164,3 +164,84 @@
 // calculateEngravingPrice("JavaScript is in my blood", 20);
 // calculateEngravingPrice("Web-development is creative work", 40);
 // calculateEngravingPrice("Web-development is creative work", 20);
+
+
+
+// task 12
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+  
+// string = array.join(delimeter);
+
+
+  
+//   return string;
+// }
+
+// makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " ");
+// makeStringFromArray(["M", "a", "n", "g", "o"], "");
+// makeStringFromArray(["top", "picks", "for", "you"], "_");
+
+
+
+
+// task 13
+// function slugify(title) {
+  
+//     const titleSp = title.split(' ');
+//     const titleJo = titleSp.join('-');
+//     const slug = titleJo.toLowerCase();
+//     return slug;
+
+
+
+
+  
+// }
+
+
+// slugify("Arrays for begginers");
+// slugify("English for developer");
+// slugify("Ten secrets of JavaScript");
+// slugify("How to become a JUNIOR developer in TWO WEEKS");
+// console.log(slugify("How to become a JUNIOR developer in TWO WEEKS"));
+
+
+
+// task 14
+// const fruits = ['apple', 'plum', 'pear', 'orange', 'banana'];
+
+
+// const firstTwoEls = fruits.slice(0, 2);
+// const nonExtremeEls = fruits.slice(1, 4);
+// const lastThreeEls = fruits.slice(-3);
+
+
+
+// task 15
+// const oldClients = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+// const newClients = ['Peach', 'Houston'];
+
+// const allClients = oldClients.concat(newClients);
+
+
+
+// task 16
+function makeArray(firstArray, secondArray, maxLength) {
+let array = [];
+    if (firstArray.concat(secondArray) >= maxLength) {
+        array.push(firstArray);
+        // or  array = firstArray;
+        return;
+    }
+    return array = firstArray.concat(secondArray).slice(0, maxLength);
+}
+  
+
+makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
+makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
