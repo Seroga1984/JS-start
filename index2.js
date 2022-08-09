@@ -227,21 +227,79 @@
 
 
 // task 16
-function makeArray(firstArray, secondArray, maxLength) {
-let array = [];
-    if (firstArray.concat(secondArray) >= maxLength) {
-        array.push(firstArray);
-        // or  array = firstArray;
-        return;
-    }
-    return array = firstArray.concat(secondArray).slice(0, maxLength);
-}
+// function makeArray(firstArray, secondArray, maxLength) {
+// let array = [];
+//     if (firstArray.concat(secondArray) >= maxLength) {
+//         array.push(firstArray);
+      
+//         return;
+//     }
+//     return array = firstArray.concat(secondArray).slice(0, maxLength);
+// }
   
 
-makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
-makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
-makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
-makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+// makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3);
+// makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4);
+// makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3);
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2);
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4);
+// makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0);
+// console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0));
+
+
+
+// task 17
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <= end; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+// task 18
+// function calculateTotal(number) {
+ 
+// let total = 0;
+//   for (let i = 0; i <= number; i += 1) {
+//     total += i;
+    
+//   }
+//   console.log(total);
+// return total;
+
+  
+// }
+
+// calculateTotal(1);
+// calculateTotal(3);
+// calculateTotal(7);
+// calculateTotal(18);
+// calculateTotal(24);
+
+
+
+// task 19
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { 
+//   const fruit = fruits[i]; 
+//   console.log(fruit);
+// }
+
+// task 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+  
+// const ordered = []
+// for (let i = 0; i < order.length; i += 1) {
+//   total += order[i];
+// }
+  
+//   console.log(total);
+//   return total;
+// }
+
+// calculateTotalPrice([12, 85, 37, 4]);
+// calculateTotalPrice([164, 48, 291]);
+// calculateTotalPrice([164, 48, 291]);
+// calculateTotalPrice([412, 371, 94, 63, 176]);
