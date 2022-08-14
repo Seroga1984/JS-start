@@ -281,8 +281,8 @@
 // task 19
 // const fruits = ['apple', 'plum', 'pear', 'orange'];
 
-// for (let i = 0; i < fruits.length; i += 1) { 
-//   const fruit = fruits[i]; 
+// for (let i = 0; i < fruits.length; i += 1) {
+//   const fruit = fruits[i];
 //   console.log(fruit);
 // }
 
@@ -303,3 +303,39 @@
 // calculateTotalPrice([164, 48, 291]);
 // calculateTotalPrice([164, 48, 291]);
 // calculateTotalPrice([412, 371, 94, 63, 176]);
+
+
+
+
+// task 21
+
+// Напиши функцию findLongestWord(string) которая принимает произвольную строку состоящую только из слов разделённых пробелом (параметр string) и возвращает самое длинное слово в этой строке.
+// function findLongestWord(string) {
+  
+
+
+// const splitString = string.split(" ");
+// let biggestWord = splitString[0];
+// for (let i = 0; i < splitString.length; i += 1) {
+//   if (splitString[i].length > biggestWord.length) {
+//     biggestWord = splitString[i];
+//   }
+// }
+// return biggestWord;
+  
+
+
+
+// findLongestWord("The quick brown fox jumped over the lazy dog");
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// findLongestWord("Google do a roll");
+// findLongestWord("May the force be with you");
+
+
+
+
+
+
+// task 22 Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
+
+
