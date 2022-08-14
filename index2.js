@@ -339,3 +339,78 @@
 // task 22 Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала массив всех целых чисел от значения min до max.
 
 
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+  
+// for (let i = min; i <= max; i += 1) {
+//   numbers.push(i);
+// }
+        
+  
+//   return numbers;
+// }
+
+// createArrayOfNumbers(1, 3);
+// createArrayOfNumbers(14, 17);
+// createArrayOfNumbers(29, 34);
+
+
+
+// task 23 Напиши функцию filterArray(numbers, value), которая принимает массив чисел (параметр numbers) и возвращает новый массив, в котором будут только те элементы массива numbers, которые больше чем значение параметра value (число).
+
+// function filterArray(numbers, value) {
+   
+// const elements = [];
+// for (const item of numbers) {
+//   console.log(item);
+//   if (item > value) {
+//     elements.push(item);
+//   }
+// }
+// return elements;
+  
+// }
+
+
+// filterArray([1, 2, 3, 4, 5], 3);
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+
+
+// task 24 Функция checkFruit(fruit) принимает строку с названием фрукта (параметр fruit), и проверяет есть ли такой фрукт в массиве fruits.
+
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit);
+// }
+
+
+
+
+
+// task 25 Общими элементами массивов называют те элементы, которые присутствуют во всех массивах.
+
+// Например, в двух массивах [1, 3, 5] и [0, 8, 5, 3] общими будут числа 3 и 5, т.к. они присутствуют в обоих исходных массивах. А числа 0, 1 и 8 присутствуют только в одном из массивов.
+
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов, которые присутствуют в обоих исходных массивах.
+// function getCommonElements(array1, array2) {
+  
+// const newArray =[];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if(array2.includes(array1[i])){
+//       newArray.push(array1[i]);
+//     }
+//   }
+
+//   return newArray;
+
+
+ 
+// }
+
+// getCommonElements([1, 2, 3], [2, 4]);
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
